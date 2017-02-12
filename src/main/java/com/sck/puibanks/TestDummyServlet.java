@@ -29,7 +29,7 @@ public class TestDummyServlet extends HttpServlet {
         List<String> result = new ArrayList<String>();
         
         try {
-            Statement stat = SQLiteConnUtils_SQLJDBC.getSQLiteConnection_SQLJDBC().createStatement();
+            Statement stat = ConnectionUtils.getConnection().createStatement();
             ResultSet rs = stat.executeQuery("select * from tbl_presentation_test_data;");
             
             while (rs.next()) {
@@ -40,8 +40,8 @@ public class TestDummyServlet extends HttpServlet {
             
         } catch (Exception ex) {
             result.add("No Dummy Data") ;
+            ex.printStackTrace();
         }
-        
         
         String nextJSP = "/testdummy.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
