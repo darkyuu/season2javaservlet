@@ -12,7 +12,7 @@ public class MySQLConnUtils {
         String dbName = "gnt_season2_wallet";
         String dbPort = "3306";
         String userName = "root";
-        String password = "satojiyuu";
+        String password = "yourpassword";
         
         return getMySQLConnection(hostName, dbName, dbPort, userName, password);
     }
