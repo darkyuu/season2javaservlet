@@ -36,7 +36,7 @@ public class TestDummyServlet extends HttpServlet {
                 result.add("<h2>|" + rs.getString("ID") + "|" +rs.getString("name")+"</h2><br/>");
             }
             rs.close();
-            ConnectionUtils.closeQuietly(SQLiteConnUtils_SQLJDBC.getSQLiteConnection_SQLJDBC());
+            ConnectionUtils.closeQuietly(MySQLConnUtils.getMySQLConnection());
             
         } catch (Exception ex) {
             result.add("No Dummy Data") ;

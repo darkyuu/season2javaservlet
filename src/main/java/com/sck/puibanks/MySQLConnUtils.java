@@ -9,10 +9,10 @@ public class MySQLConnUtils {
             throws ClassNotFoundException, SQLException {
 
         String hostName = "localhost";
-        String dbName = "parkingcalculationtest";
+        String dbName = "gnt_season2_wallet";
         String dbPort = "3306";
         String userName = "root";
-        String password = "P@ssw0rd";
+        String password = "satojiyuu";
         
         return getMySQLConnection(hostName, dbName, dbPort, userName, password);
     }
