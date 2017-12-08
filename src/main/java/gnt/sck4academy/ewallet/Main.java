@@ -1,4 +1,4 @@
-package com.sck.puibanks;
+package gnt.sck4academy.ewallet;
 
 import java.util.Optional;
 import org.apache.catalina.startup.Tomcat;

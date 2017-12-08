@@ -1,4 +1,4 @@
-package com.sck.puibanks;
+package gnt.sck4academy.ewallet;
 
 import java.io.IOException;
 import java.sql.Statement;

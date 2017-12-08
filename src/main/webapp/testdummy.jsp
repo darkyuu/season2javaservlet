@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pui Bank Demo:Show dummy data</title>
+        <title>ewallet Demo - sck4academy</title>
     </head>
 
     <body>
